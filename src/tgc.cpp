@@ -87,7 +87,7 @@ void play() {
             case ERR:
                 break;
             case 'w':
-                if (!jumping) jump();
+                if (map[player_row + 1][player_col] != EMPTY) jump();
                 break;
             case 'a':
                 if (player_col - 1 <= 0) break;
