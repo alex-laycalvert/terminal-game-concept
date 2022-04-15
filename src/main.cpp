@@ -30,6 +30,8 @@ void setup() {
     curs_set(0);
     halfdelay(1);
     if (!has_colors()) exit_game(1, "your terminal does not support colors");
+    use_default_colors();
+    start_color();
 }
 
 void exit_game(const int code, const string msg) {
